@@ -53,7 +53,7 @@ public class RestApiController {
 		} else {
 			List<Movie> moviesInCategory = dao.findByCategory(category);
 			int length = moviesInCategory.size();
-			int id = (int)((Math.random() * length) + 1);
+			int id = (int)((Math.random() * length));
 			return moviesInCategory.get(id);
 		}
 	}
